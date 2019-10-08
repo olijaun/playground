@@ -1,6 +1,8 @@
 package org.jaun.idontbyte.idempotence.idemotenceexample;
 
-public class Deposit {
+import java.io.Serializable;
+
+public class Deposit implements Serializable {
 
     private int amount;
     private String currency;
