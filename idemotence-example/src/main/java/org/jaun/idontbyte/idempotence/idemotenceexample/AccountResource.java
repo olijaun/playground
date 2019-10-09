@@ -3,10 +3,7 @@ package org.jaun.idontbyte.idempotence.idemotenceexample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.support.DataAccessUtils;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.transaction.support.TransactionCallback;
-import org.springframework.transaction.support.TransactionCallbackWithoutResult;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.ws.rs.*;
@@ -57,7 +54,6 @@ public class AccountResource {
     @POST
     @Produces({MediaType.TEXT_PLAIN})
     @Path("/deposits")
-    @Transactional
     public Response addDeposit(Deposit deposit, @HeaderParam("request-id") String requestId) {
 
         try {
