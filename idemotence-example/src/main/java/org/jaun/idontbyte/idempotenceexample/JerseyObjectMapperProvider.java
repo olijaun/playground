@@ -1,4 +1,4 @@
-package org.jaun.idontbyte.idemotenceexample;
+package org.jaun.idontbyte.idempotenceexample;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;

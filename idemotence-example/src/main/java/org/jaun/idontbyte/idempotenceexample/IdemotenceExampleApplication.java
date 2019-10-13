@@ -1,4 +1,4 @@
-package org.jaun.idontbyte.idemotenceexample;
+package org.jaun.idontbyte.idempotenceexample;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

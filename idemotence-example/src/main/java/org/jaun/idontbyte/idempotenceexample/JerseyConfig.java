@@ -1,4 +1,4 @@
-package org.jaun.idontbyte.idemotenceexample;
+package org.jaun.idontbyte.idempotenceexample;
 
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
