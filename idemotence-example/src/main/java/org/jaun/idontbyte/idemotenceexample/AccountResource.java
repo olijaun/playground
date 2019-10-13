@@ -1,4 +1,4 @@
-package org.jaun.idontbyte.idempotence.idemotenceexample;
+package org.jaun.idontbyte.idemotenceexample;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.support.DataAccessUtils;

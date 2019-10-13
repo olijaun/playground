@@ -1,4 +1,4 @@
-package org.jaun.idontbyte.idempotence.idemotenceexample;
+package org.jaun.idontbyte.idemotenceexample;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
