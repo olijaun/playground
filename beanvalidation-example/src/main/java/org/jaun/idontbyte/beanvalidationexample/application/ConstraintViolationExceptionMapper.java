@@ -17,7 +17,6 @@ public class ConstraintViolationExceptionMapper implements ExceptionMapper<Const
         List<ValidationErrorDto> collect = e.getConstraintViolations().stream()
                 .map(v -> new ValidationErrorDto(toLocation(v), v.getMessage())).collect(Collectors.toList());
         ErrorDto errorDto = new ErrorDto();
-        errorDto.getErrors().addAll(collect);
 
 
         return Response.status(Response.Status.BAD_REQUEST).entity(errorDto).build();
