@@ -1,17 +1,21 @@
 package org.jaun.idontbyte.beanvalidationexample.application;
 
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 public class RegistrationDto implements Serializable {
 
-    @NotNull @Email
+    @NotNull
+    // standard option: @Email
+    // alternative option: @Pattern(regexp = EmailAddress.EMAIL_ADDRESS_PATTERN)
+    @ValidEmailAddress // our own specific validation
     private String emailAddress;
-    @NotNull @NotBlank
+    @NotNull
+    @NotBlank
     private String name;
-    @NotNull @NotBlank
+    @NotNull
+    @NotBlank
     private String password;
 
     public String getEmailAddress() {
